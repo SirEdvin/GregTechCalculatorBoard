@@ -71,6 +71,8 @@ public interface IBoardActionDispatcher {
 
     void fitToView();
 
+    void copyFlowAsPng();
+
     boolean scaleLoopToSteadyState(String targetNodeId);
 
     void openModuleSubPage(RecipeNode moduleNode);
@@ -126,4 +128,6 @@ public interface IBoardActionDispatcher {
     void openNoteEditDialog(CanvasStickyNote note);
 
     void openTargetOutputRateDialog(RecipeNode node, int outputIndex);
+ 
+    void batchApplyPageTargetVoltage();
 }
